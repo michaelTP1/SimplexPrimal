@@ -93,7 +93,7 @@ void PROBLEM::Volcar_problema(void){
     sprintf(a," %8.2lf",b[i]);
     cout<<" <="<<a<<endl;
   }
-  cout<<endl<<endl<<endl<<endl;
+  cout<<endl<<endl<<endl<<"                 Copyright Michael Jonay Trujillo Padilla"<<endl<<endl;
   cout<<" Pulsa cualquier tecla para continuar";
   cin.get();
   cin.get();
@@ -237,9 +237,10 @@ void PROBLEM::mostrar_solucion(void)
 {
   char a[80];
   cout<<"*****************************************************************************"<<endl;
-  cout<<"                            SOLUCIÓN"<<endl;
+  cout<<"                                   SOLUCIÓN"<<endl;
   for(int i=0;i<m;i++){
-  
+    if(i%5==0)
+      cout<<endl<<"      ";
     if(ivb[i]<n)
       
       cout<<" x"<<ivb[i]+1<<" = ";
@@ -253,7 +254,7 @@ void PROBLEM::mostrar_solucion(void)
     sprintf(a,"%.3lf",-Vo);
   else
     sprintf(a,"%.3lf",Vo);
-  cout<<endl<<endl<<"                        Z =   "<<a<<endl;
+  cout<<endl<<endl<<"                                Z =   "<<a<<endl;
   cout<<"*****************************************************************************"<<endl;
 }
 
